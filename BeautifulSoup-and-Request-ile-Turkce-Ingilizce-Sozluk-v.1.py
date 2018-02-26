@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 print("""
 **********************
-Türkçe - İngilizce
-İngilizce - Türkçe 
-    v.1 Sözlük
+TÃ¼rkÃ§e - Ä°ngilizce
+Ä°ngilizce - TÃ¼rkÃ§e 
+    v.1 SÃ¶zlÃ¼k
     
 created by Omer Akkoyun
 *********************
@@ -12,7 +12,7 @@ created by Omer Akkoyun
 
 """)
 while True:
-    sozluk=input("\nÇevirmek istediğiniz kelime = ")
+    sozluk=input("\nÃ‡evirmek istediÄŸiniz kelime = ")
     url="https://tr.bab.la/sozluk/turkce-ingilizce/"+sozluk
     response= requests.get(url)
     html_icerigi=response.content
@@ -30,16 +30,23 @@ while True:
 
     for i in listem:
         if "Ekibimiz" not in i:
-            print("Çevirisi başarılıyla yapıldı\n","  ",sozluk,"çevirisi ")
+            print("Ã‡evirisi baÅŸarÄ±lÄ±yla yapÄ±ldÄ±\n","  ",sozluk,"Ã§evirisi ")
             print("--------------------")
 
         else:
-            print("\nÜzgünüz,Böyle bir kelime bulunamadı!")
+            print("\nÃœzgÃ¼nÃ¼z,BÃ¶yle bir kelime bulunamadÄ±!")
             break
 
         for i in (listem[0][1:]):
             print(i)
         print("--------------------")
+
+
+
+
+
+
+
 
 
 
