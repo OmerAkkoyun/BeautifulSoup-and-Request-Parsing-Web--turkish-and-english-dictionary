@@ -12,6 +12,7 @@ created by Omer Akkoyun
 
 """)
 while True:
+  try:
     sozluk=input("\nÇevirmek istediğiniz kelime = ")
     url="https://tr.bab.la/sozluk/turkce-ingilizce/"+sozluk
     response= requests.get(url)
@@ -40,16 +41,5 @@ while True:
         for i in (listem[0][1:]):
             print(i)
         print("--------------------")
-
-
-
-
-
-
-
-
-
-
-
-
-
+  except:
+    print("Lütfen girdiğiniz kelimeyi kontrol edin!")
