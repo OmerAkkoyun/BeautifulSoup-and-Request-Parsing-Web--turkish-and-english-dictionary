@@ -8,8 +8,6 @@ Türkçe - İngilizce
     
 created by Omer Akkoyun
 *********************
-
-
 """)
 while True:
   try:
