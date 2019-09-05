@@ -1,4 +1,3 @@
-# İlk önce Beautifulsoup ve Request modulleri import edilmeli.
-# pip kullanarak yada pycharm üzerinden yapabilirsiniz.
-
-# BeautifulSoup-and-Request-ile-Turkce-Ingilizce-Sozluk-v.1
+# first Beautifulsoup and Request modules have to import
+# You can use pip for this
+# BeautifulSoup-and-Request-Turkish-English-Dictionary-v.1
